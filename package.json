@@ -2,11 +2,7 @@
   "name": "PLUGIN_NAME",
   "version": "0.0.0",
   "description": "PostCSS plugin PLUGIN_DESC",
-  "keywords": [
-    "postcss",
-    "css",
-    "postcss-plugin"KEYWORDS
-  ],
+  "keywords": ["postcss", "css", "postcss-plugin"KEYWORDS],
   "author": "AUTHOR_NAME <AUTHOR_EMAIL>",
   "license": "MIT",
   "repository": "GITHUB_NAME/PLUGIN_NAME",
@@ -15,18 +11,21 @@
   },
   "homepage": "https://github.com/GITHUB_NAME/PLUGIN_NAME",
   "dependencies": {
-    "postcss": "^6.0.1"
+    "postcss": "^6.0.11"
   },
   "devDependencies": {
-    "eslint": "^3.19.0",
+    "eslint": "^4.7.2",
+    "eslint-config-airbnb-base": "^12.0.0",
     "eslint-config-postcss": "^2.0.2",
+    "eslint-config-prettier": "^2.5.0",
+    "eslint-plugin-import": "^2.7.0",
     "jest": "^20.0.0"
   },
   "scripts": {
     "test": "jest && eslint *.js"
   },
   "eslintConfig": {
-    "extends": "eslint-config-postcss/es5",
+    "extends": ["eslint-config-airbnb-base", "eslint-config-prettier"],
     "env": {
       "jest": true
     }
