@@ -25,7 +25,7 @@
     "test": "jest && eslint *.js"
   },
   "eslintConfig": {
-    "extends": ["eslint-config-airbnb-base", "eslint-config-prettier"],
+    "extends": ["airbnb-base", "prettier"],
     "env": {
       "jest": true
     }
